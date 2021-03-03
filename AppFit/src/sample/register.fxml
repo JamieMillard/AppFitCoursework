@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <Label layoutX="59.0" layoutY="75.0" text="Firstname" />
+      <Label layoutX="60.0" layoutY="108.0" text="Lastname" />
+      <Label layoutX="60.0" layoutY="138.0" text="Username" />
+      <Label layoutX="60.0" layoutY="170.0" text="Password" />
+      <Label fx:id="confirmPassword" layoutX="62.0" layoutY="200.0" text="Confirm Password" />
+      <PasswordField fx:id="passwordConfirm" layoutX="179.0" layoutY="196.0" />
+      <PasswordField fx:id="registerPasswordField" layoutX="179.0" layoutY="166.0" />
+      <TextField fx:id="usernameTextField" layoutX="179.0" layoutY="134.0" />
+      <TextField fx:id="lastnameTextField" layoutX="179.0" layoutY="96.0" />
+      <TextField fx:id="firstnameTextField" layoutX="179.0" layoutY="63.0" promptText="Firstname" />
+      <Button fx:id="registerButton" layoutX="231.0" layoutY="238.0" mnemonicParsing="false" onAction="#registerButtonOnAction" text="Register" />
+      <Button fx:id="closeButton" layoutX="236.0" layoutY="297.0" mnemonicParsing="false" onAction="#closeButtonOnAction" text="Close" />
+      <Label fx:id="confirmPasswordLabel" layoutX="59.0" layoutY="341.0" />
+      <Label fx:id="registerSuccessLabel" layoutX="60.0" layoutY="369.0" />
+   </children>
+</AnchorPane>
